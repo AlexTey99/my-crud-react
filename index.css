@@ -1,0 +1,158 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background: #0b1721;
+}
+body .tittle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+body .main-container {
+  height: 100%;
+  width: 400px;
+  padding: 25px;
+  border: 2px solid white;
+}
+body .main-container .global {
+  display: flex;
+}
+body .main-container .global .from {
+  display: flex;
+  position: relative;
+  height: 50px;
+  width: 100%;
+}
+body .main-container .global .from .input {
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background: none;
+}
+body .main-container .global .from .linea {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  border-bottom: 1px solid #c7c7c7;
+}
+body .main-container .global .from .linea .text {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+  color: white;
+}
+body .main-container .global .from .input:focus + .linea .text, body .main-container .global .from .input:valid + .linea .text {
+  transform: translateY(-150%);
+  font-size: 12px;
+  color: #2ecece;
+}
+body .main-container .global .from .input:focus + .linea:after, body .main-container .global .from .input:valid + .linea:after {
+  transform: translateX(0%);
+}
+body .main-container .global .from .linea::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #2ecece;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+body .main-container .global .button {
+  display: flex;
+  padding: 12px 7px 0px 0px;
+  margin-top: 10px;
+  height: 40px;
+  width: 70px;
+  font-size: 17px;
+  color: white;
+  background: #2e7d32;
+  border: none;
+  border-radius: 5px;
+}
+body .main-container .global .fa-regular {
+  width: 50px;
+}
+body .main-container .global .button:hover {
+  cursor: pointer;
+  background: #1f5f22;
+  box-shadow: 0px 5px 30px -10px #1f5f22;
+}
+body .main-container .texts-container {
+  margin-top: 30px;
+  height: 305px;
+  overflow-y: scroll;
+}
+body .main-container .texts-container .elementList {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 20px;
+  height: 50px;
+  width: 90%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: aliceblue;
+}
+body .main-container .texts-container .elementList .fa-pencil {
+  position: absolute;
+  right: 45px;
+}
+body .main-container .texts-container .elementList .fa-pencil:hover {
+  cursor: pointer;
+  filter: invert(35%) sepia(89%) saturate(383%) hue-rotate(74deg) brightness(92%) contrast(86%);
+}
+body .main-container .texts-container .elementList .fa-trash {
+  position: absolute;
+  right: 20px;
+}
+body .main-container .texts-container .elementList .fa-trash:hover {
+  cursor: pointer;
+  filter: invert(31%) sepia(44%) saturate(6661%) hue-rotate(347deg) brightness(98%) contrast(121%);
+}
+body .other-cotainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 20px;
+  height: 100px;
+  width: 400px;
+  border: 2px solid white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body .other-cotainer .all {
+  color: blue;
+}
+body .other-cotainer .all:hover {
+  cursor: pointer;
+}
+body .other-cotainer .active:hover {
+  cursor: pointer;
+}
+body .other-cotainer .Completed:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.css.map */

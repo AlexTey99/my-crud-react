@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/fe59f0d15a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>my-crud-react</title>
+</head>
+
+<body>
+
+    <h1 class="tittle">Todo App</h1>
+
+    <div class="main-container">
+        <div class="global">
+            <div class="from">
+                <input id="input" class="input" type="text" required>
+                <div class="linea">
+                    <samp class="text">Create a new Todo</samp>
+                </div>
+            </div>
+            <button id="button" class="button" onclick="addText()">
+                <i class="fa-sharp fa-regular fa-square-plus"></i>ADD</button>
+        </div>
+        <div class="texts-container"></div>
+    </div>
+    <div class="other-cotainer">
+        <p class="all">All</p>
+        <p class="active">Active</p>
+        <p class="Completed">Completed</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
